@@ -1,13 +1,36 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
+import Dictionary from "./Dictionary";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
-      <h1>Dictionary App</h1>
+      <div className="container">
+        <header className="App-header">
+          <h1>Dictionary App</h1>
+        </header>
+        <main>
+          <Dictionary />
+        </main>
+        <footer className="App-footer">
+          Coded by Chimdinma Egbuchulam and open-souced on{" "}
+          <a
+            href="https://github.com/didichulam/dictionary-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>{" "}
+          and hosted on{" "}
+          <a
+            href="https://dinmas-dictionary-app.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
