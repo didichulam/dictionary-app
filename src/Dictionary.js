@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
+import Results from "./Results";
 
 export default function Dictionary() {
   let [word, setWord] = useState("");
+  let [results, setResults] = useState(null);
 
   function fetchMeaning(response) {
-    console.log(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function saveWord(event) {
@@ -31,6 +33,7 @@ export default function Dictionary() {
         />
         <input type="submit" value="Search" />
       </form>
+      <Results data={results} />
     </div>
   );
 }
