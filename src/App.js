@@ -10,7 +10,7 @@ export default function App() {
           <h1>Dictionary App</h1>
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultWord="sunset" />
         </main>
         <footer className="App-footer">
           Coded by Chimdinma Egbuchulam and open-souced on{" "}

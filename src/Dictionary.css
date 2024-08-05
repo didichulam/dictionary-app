@@ -1,3 +1,31 @@
-.Dictionary form {
-  margin: 0 auto;
+.Dictionary h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Dictionary section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px rgb(0 0 0 /10%);
+  margin: 20px 0;
+}
+
+.Dictionary .space {
+  width: 70%;
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: #333;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+}
+
+.Dictionary .button {
+  width: 20%;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: firebrick;
+  padding: 6px 10px;
+  color: white;
+  font-size: 18px;
 }
