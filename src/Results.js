@@ -4,7 +4,6 @@ import Phonetic from "./Phonetic";
 import "./Results.css";
 
 export default function Results(props) {
-  console.log(props.data);
   if (props.data) {
     return (
       <div className="Results">
